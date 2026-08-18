@@ -16,7 +16,7 @@ SPEC.loader.exec_module(VALIDATOR)
 class ValidatorTests(unittest.TestCase):
     def test_library_is_valid(self) -> None:
         packs = sorted((MODULE_PATH.parents[1] / "packs").rglob("*.md"))
-        self.assertGreaterEqual(len(packs), 14)
+        self.assertGreaterEqual(len(packs), 16)
         for pack in packs:
             self.assertEqual([], VALIDATOR.validate_file(pack), pack)
 

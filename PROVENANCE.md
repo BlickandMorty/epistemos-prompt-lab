@@ -16,6 +16,13 @@ The library builds on broadly published prompt-engineering practices:
   and [Anthropic prompting documentation](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview);
 - programmatic prompt optimization as represented by
   [DSPy optimizers](https://dspy.ai/learn/optimization/optimizers/);
+- the documented Codex
+  [durable-goal workflow](https://learn.chatgpt.com/use-cases/follow-goals),
+  which emphasizes one objective, a verifiable stopping condition, named
+  evidence, and checkpoints;
+- official Claude Code documentation for
+  [session continuation and bounded CLI runs](https://code.claude.com/docs/en/cli-usage)
+  and [project memory files](https://code.claude.com/docs/en/memory);
 - ordinary software assurance practices: least privilege, threat modeling,
   testable acceptance criteria, and provenance.
 
