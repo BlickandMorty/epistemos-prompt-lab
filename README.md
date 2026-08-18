@@ -38,6 +38,7 @@ separates observed facts, inferences, and unresolved questions.
 | [System prompt builder](packs/forge/system-prompt-builder.md) | Building an original, testable system contract |
 | [Durable goal loop](packs/orchestration/durable-goal-loop.md) | Long-running tasks that survive interruptions |
 | [Deliberation and fusion](packs/orchestration/deliberation-fusion.md) | Combining independent candidate solutions |
+| [Full-session orchestrator](packs/orchestration/full-session-orchestrator.md) | From read-first orientation through verified handoff |
 | [Codex goal adapter](packs/orchestration/codex-goal-adapter.md) | A `/goal` contract with checkpoints and verifiable stopping |
 | [Claude Code loop adapter](packs/orchestration/claude-code-loop-adapter.md) | Resumable work grounded in repository instructions and artifacts |
 | [Memory architect](packs/memory/memory-architect.md) | Useful memory with consent, provenance, and expiration |
