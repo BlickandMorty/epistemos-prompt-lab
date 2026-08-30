@@ -35,6 +35,7 @@ separates observed facts, inferences, and unresolved questions.
 | [Approval-gated agent](packs/agents/approval-gated-agent.md) | Tool-using agents with explicit authority boundaries |
 | [Instruction-file architect](packs/agents/instruction-file-architect.md) | Repository-level agent rules with testable scope |
 | [Prompt upgrader](packs/forge/prompt-upgrader.md) | Compressing a brain dump without silently changing intent |
+| [Precision-with-context editor](packs/forge/precision-with-context-editor.md) | Making writing clearer without sanding off the person's point, voice, or stakes |
 | [System prompt builder](packs/forge/system-prompt-builder.md) | Building an original, testable system contract |
 | [Durable goal loop](packs/orchestration/durable-goal-loop.md) | Long-running tasks that survive interruptions |
 | [Deliberation and fusion](packs/orchestration/deliberation-fusion.md) | Combining independent candidate solutions |
@@ -46,6 +47,28 @@ separates observed facts, inferences, and unresolved questions.
 Each file is a template, not a claim that prompting alone performs statistical
 estimation, formal verification, or security testing. Use real tools and domain
 review when those claims matter.
+
+## How the prompts make decisions less careless
+
+These prompts are not based on the idea that a model becomes smarter because a
+prompt sounds emotional or intense. They are built to give the model more of
+the context that a careful person would notice before acting.
+
+- **Precision:** say exactly what has to be true, what the output should look
+  like, and what would count as a failure.
+- **Context:** make the goal, audience, source material, and hard constraints
+  visible instead of assuming the model will infer them.
+- **Human signal:** when editing, preserve the part of the text that shows why
+  the writer cares or what they are trying to protect. This is not a truth
+  signal; it helps avoid a rewrite that is technically clean but misses the
+  actual point.
+- **Caution:** separate direct facts from inference, identify what is missing,
+  and ask before making a change that would alter authority, sensitive details,
+  or a material claim.
+
+The practical loop is still simple:
+
+`understand -> state the constraints -> make the smallest useful change -> check what changed -> stop`
 
 ## Design language
 
@@ -70,12 +93,22 @@ It deliberately supplies test categories and reporting structure rather than
 harmful payloads. The agent pack requires least authority, explicit approval
 for consequential actions, and a reversible-by-default operating model.
 
-## Authorship and assistance
+## Authorship and AI assistance
 
-The underlying research direction, experiments, selection criteria, and
-Epistemos methodology are the project author's work. AI tools assisted with
-implementation, consolidation, editing, and testing. That distinction is made
-explicit because provenance is more useful than pretending a tool was absent.
+> **AI assistance:** substantial
+> `████████░░` AI helped with implementation, consolidation, editing, examples,
+> and testing across the library.
+
+The author selected the problems the packs are meant to address, chose the
+patterns worth keeping, and reviewed the published wording and validation
+results. The library also reflects real work in AI evaluation, research
+workflows, operations, and the Epistemos project. It does not claim that every
+line was manually written without AI or that every template has been proven to
+improve every model.
+
+The packs should be judged by whether they are clear, runnable, testable, and
+honest about their limits. AI assistance is shown here because hiding it would
+be less useful than explaining how the work was made.
 
 ## License
 
